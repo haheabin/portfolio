@@ -1,15 +1,15 @@
 @charset "utf-8";
 
 /* 모바일*/
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     .wrap #page1 h1 {
         font-size: 4rem;
         left: 3rem;
     }
 
     .wrap #page1 .heart {
-        top: 20rem;
-        left: 10rem;
+        top: 15rem;
+        left: 8.5rem;
         transition: all 1s ease;
         margin: 0 auto;
     }
@@ -27,17 +27,22 @@
     .menu img {
         width: 25px;
         height: 35px;
+        top: -10rem;
+    }
+
+    #page1 .scrollmark {
+        top: 30rem;
     }
 
     .menu .open-button {
         font-size: 1rem;
-        top: 25px;
+        top: -140px;
     }
 
 
     #page1 .scrollmark h5 {
         font-size: 1rem;
-        padding-bottom: .5rem;
+        padding-bottom: 1rem;
     }
 
     #page1 .scrollmark .arrow {
@@ -50,7 +55,7 @@
         height: 200px;
         padding: 0 0rem;
         border-radius: 15px;
-        top: -10rem;
+        top: -20rem;
         left: -9rem;
     }
 

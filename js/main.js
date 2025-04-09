@@ -55,7 +55,7 @@ $(function () {
     $('.menu-content .pagefour').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: 8900
+            scrollTop: 11000
         }, 100)
     })
 
@@ -67,7 +67,7 @@ $(function () {
     $('#page3 .folder-right .f-detail:last-child button').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: 8900
+            scrollTop: 11000
         }, 100)
 
     });
@@ -80,14 +80,14 @@ $(function () {
 
         // 페이지 스크롤을 9000px 위치로 이동
         $('html, body').animate({
-            scrollTop: 9000  // 9000px로 스크롤 이동
+            scrollTop: 11200 // 9000px로 스크롤 이동
         }, 100);  // 500ms 동안 부드럽게 이동
     });
     $('.close-btn').click(function() {
         $(this).closest('.detail').hide();
 
         $('html, body').animate({
-            scrollTop: 9300  // 9000px로 스크롤 이동
+            scrollTop: 11600 // 9000px로 스크롤 이동
         }, 100);  // 500ms 동안 부드럽게 이동
     });
 
