@@ -80,14 +80,14 @@ $(function () {
 
         // 페이지 스크롤을 9000px 위치로 이동
         $('html, body').animate({
-            scrollTop: 11200 // 9000px로 스크롤 이동
+            scrollTop: 11200  // 9000px로 스크롤 이동
         }, 100);  // 500ms 동안 부드럽게 이동
     });
     $('.close-btn').click(function() {
         $(this).closest('.detail').hide();
 
         $('html, body').animate({
-            scrollTop: 11600 // 9000px로 스크롤 이동
+            scrollTop: 11600  // 9000px로 스크롤 이동
         }, 100);  // 500ms 동안 부드럽게 이동
     });
 
@@ -106,22 +106,3 @@ $(function () {
     });
 });
 
-
-document.addEventListener("mousemove", (event) => {
-    const trail = document.createElement("div");
-    trail.classList.add("cursor-trail");
-
-    // 커서의 위치를 trail에 적용
-    const x = event.pageX;
-    const y = event.pageY;
-    trail.style.left = `${x - 30}px`;  /* 60px 크기의 원을 중앙에 맞추기 위해 -30px */
-    trail.style.top = `${y - 30}px`;   /* 60px 크기의 원을 중앙에 맞추기 위해 -30px */
-
-    // 물결 요소를 body에 추가
-    document.body.appendChild(trail);
-
-    // 애니메이션 끝나면 물결 요소 제거
-    setTimeout(() => {
-        trail.remove();
-    }, 1500);  // 애니메이션 시간과 동일하게 설정 (1.5초)
-});
